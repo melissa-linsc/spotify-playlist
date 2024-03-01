@@ -78,9 +78,10 @@ function App () {
           Ja<span className={styles.highlight}>mmm</span>ing
         </h1>
         <div className={styles.App}>
+          <h2>Hello!</h2>
           {/* <!-- Add a SearchBar component --> */}
           <SearchBar onSearch={search} />
-          <div className={styles['App-Playlist']}>
+          <div className={styles.AppPlaylist}>
             {/* <!-- Add a SearchResults component --> */}
             <SearchResults userSearchResults={searchResults} onAdd={addTrack} />
             {/* <!-- Add a Playlist component --> */}
