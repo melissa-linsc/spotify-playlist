@@ -1,7 +1,8 @@
 let accessToken
 
 const clientID = "9d8be9e41a5a4f539ee0bc73e956ab5c"
-const redirectUrl =    "http://localhost:3000/"
+// const redirectUrl =    "http://localhost:3000/"
+const redirectUrl = "http://melissajammmingproject.surge.sh"
 
 const Spotify = {
     
