@@ -24,9 +24,14 @@ function Track (props) {
       <div className={styles.Track}>
         <div className={styles["Track-information"]}>
           {/* <h3><!-- track name will go here --></h3> */}
-          <h3>{props.track.name}</h3>
-          {/* <p><!-- track artist will go here--> | <!-- track album will go here --></p> */}
-          <p>{props.track.artist} | {props.track.album}</p>
+          <div>
+            <img src={`${props.track.url}`}></img>
+          </div>
+          <div className={styles.TrackText}>
+            <h3>{props.track.name}</h3>
+            {/* <p><!-- track artist will go here--> | <!-- track album will go here --></p> */}
+            <p>{props.track.artist} | {props.track.album}</p>
+          </div>
         </div>
         {/* <button class="Track-action"><!-- + or - will go here --></button> */}
         {renderAction()}

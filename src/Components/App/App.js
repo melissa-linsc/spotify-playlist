@@ -8,35 +8,36 @@ import { Spotify } from '../../util/Spotify'
 
 function App () {
   const [searchResults, setSearchResults] = useState(
-    [{
-      name: "example track name 1",
-      artist: "example track artist 1",
-      album: "example track album 1",
-      id: 1
-    },
-    {
-      name: "example track name 2",
-      artist: "example track artist 2",
-      album: "example track album 2",
-      id: 2
-    },
+    [
+   // {
+  //     name: "example track name 1",
+  //     artist: "example track artist 1",
+  //     album: "example track album 1",
+  //     id: 1
+  //   },
+  //   {
+  //     name: "example track name 2",
+  //     artist: "example track artist 2",
+  //     album: "example track album 2",
+  //     id: 2
+  //   },
   ]
   )
 
   const [playlistName, setPlaylistName] = useState("Example Playlist Name")
   const [playlistTracks, setPlaylistTracks] = useState([
-    {
-      name: "Example Playlist Name 1",
-      artist: "Example Playlist Artist 1",
-      album: "Example Playlist Album 1",
-      id: 1
-    },
-    {
-      name: "Example Playlist Name 2",
-      artist: "Example Playlist Artist 2",
-      album: "Example Playlist Album 2",
-      id: 2
-    }
+    // {
+    //   name: "Example Playlist Name 1",
+    //   artist: "Example Playlist Artist 1",
+    //   album: "Example Playlist Album 1",
+    //   id: 1
+    // },
+    // {
+    //   name: "Example Playlist Name 2",
+    //   artist: "Example Playlist Artist 2",
+    //   album: "Example Playlist Album 2",
+    //   id: 2
+    // }
   ])
 
   function  addTrack(track) {
@@ -78,18 +79,18 @@ function App () {
           Ja<span className={styles.highlight}>mmm</span>ing
         </h1>
         <div className={styles.App}>
-          <h2>Hello!</h2>
-          {/* <!-- Add a SearchBar component --> */}
-          <SearchBar onSearch={search} />
+                 {/* <!-- Add a SearchBar component --> */}
+                 <SearchBar onSearch={search} />
           <div className={styles.AppPlaylist}>
             {/* <!-- Add a SearchResults component --> */}
-            <SearchResults userSearchResults={searchResults} onAdd={addTrack} />
+              <SearchResults userSearchResults={searchResults} onAdd={addTrack} />
+
             {/* <!-- Add a Playlist component --> */}
-            <Playlist playlistName={playlistName} 
-            playlistTracks={playlistTracks} 
-            onRemove={removeTrack} 
-            onNameChange={updatePlaylistName} 
-            onSave={savePlaylist} />
+              <Playlist playlistName={playlistName} 
+              playlistTracks={playlistTracks} 
+              onRemove={removeTrack} 
+              onNameChange={updatePlaylistName} 
+              onSave={savePlaylist} />
           </div>
         </div>
       </div>

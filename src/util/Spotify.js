@@ -2,7 +2,7 @@ let accessToken
 
 const clientID = "9d8be9e41a5a4f539ee0bc73e956ab5c"
 // const redirectUrl =    "http://localhost:3000/"
-const redirectUrl = "http://melissajammmingproject.surge.sh"
+const redirectUrl = "http://localhost:3000/"
 
 const Spotify = {
     
@@ -45,11 +45,13 @@ const Spotify = {
             name: t.name,
             artist: t.artists[0].name,
             album: t.album.name,
-            uri: t.uri
+            uri: t.uri,
+            url: t.album.images[2].url
         }))
     })
    },
 
+ 
    savePlaylist(name, trackUris) {
     if (!name || !trackUris) return 
     const aToken = Spotify.getAccessToken()

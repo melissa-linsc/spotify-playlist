@@ -2,7 +2,7 @@
     width: 50%;
     height: 950px;
     overflow-y: scroll;
-    padding: .88rem;
+    padding: 0rem .88rem;
     background-color: whitesmoke;
     color: #191414;
     border-radius: 30px;
@@ -22,4 +22,12 @@
 
 .SearchResultInfo {
     color: #191414;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 2.7rem;
+    text-align: left;
 }

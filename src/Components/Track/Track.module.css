@@ -21,8 +21,7 @@
 .Track-information {
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     height: 72px;
 }
 
@@ -35,4 +34,19 @@
     font-size: .83rem;
     font-weight: 300;
     color: #191414;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.TrackText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
 }
